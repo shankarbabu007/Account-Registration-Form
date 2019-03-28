@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/normalize1.css" type="text/css"/>
+
+        <script src="js/registration.js"></script>
+<title>Assignment 5/Acharya</title>
+</head>
+
+     <body class="body">
+        <header> 
+    <p id="logo">Love! Care!! Support!!!</p>
+    <p class="wlc"> Action For Children Canada (AFCC)</p>
+    <img src="https://aftertheharvestkc.org/wp-content/uploads/ath_logo.png" alt="Seneca Logo" width="195" height="43"> 
+    
+    <!--   -->  
+    
+     </header>
+
+
+<nav class="search">    <!-- creating link area  -->  
+    <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="index.html">Introduction</a></li>
+        <li> <a href="index.html">Brief History</a></li>
+        <li> <a href="index.html">What We Do</a></li>
+        <li> <a href="index.html">Where We Work</a></li>
+        <li> <a href="index.html">News and Media</a></li>
+        <li> <a href="index.html">Volunteering/Jobs</a></li>
+        <li> <a href="registration.html">Create Account</a></li>
+
+    </ul>
+</nav>
+
+<section class="namaste"> 
+        <div class="register">
+                 
+                
+                
+                <form name="myForm" action="https://httpbin.org/post"  method="post">
+
+        <fieldset>  <!-- fieldset binds the form -->
+            <legend> Signup Form</legend>
+                     <!-- two hidden fields -->
+                    <input type="hidden" name="lastName" id="lastName" value="Acharya" />
+                    <input type="hidden" name="studentId" id="studentId" value="121850176" />
+                    
+            <table id="table">
+                <tr>
+                    <td> <label>First Name </label> </td> 
+                    <td> <span><input type="text" name="firstname" placeholder="Enter your first name" required> </span> </td>
+                    
+                </tr>
+
+                <tr>
+                    <td> <label>Last Name </label> </td> 
+                    <td> <span><input type="text" name="lastname" placeholder="Enter your last name" required> </span> </td>
+                    
+                </tr>
+
+                <tr>
+                    <!--Unit# contaions number only-->
+                   <td> <label>Unit Number</label> </td>
+                   <td><span><input type="number" id="Numb1"  name="unit#"  required> </span> </td> 
+                </tr> 
+             
+                    <!--Street# contaions number only-->
+                <tr>
+                    <td> <label>Street Number </label> </td>
+                    <td> <span> <input type="number" id="Numb2"  name="street#"  required> </span> </td>
+                </tr>
+             
+                   <!--Street Name contaions no numbers-->
+                <tr>
+                    <td> <label> Street Name </label> </td> 
+                    <td> <span> <input type="text" name="streetname" pattern="[A-Za-z]{2,}" required> </span> </td> 
+                </tr>
+                
+                    <!--City Name contaions no numbers-->
+                <tr> 
+                    <td> <label> City </label> </td> 
+                    <td><span> <input type="text" name="cityname" pattern="[A-Za-z]{2,}" required> </span> </td> 
+                </tr>
+                   <!--Provice Name are chosen from the options-->
+                <tr>
+                    <td> <label>  Province </label> </td> 
+                
+                    <td> <span>  <select id="Numb3" name="province">
+                            <option value="provincename">-</option>
+                            <option value="Alberta">AB</option>
+                            <option value="British Columbia">BC</option> 
+                            <option value="Newfoundland ">NL</option> 
+                            <option value="Nova Scotia">NS</option> 
+                            <option value="Northwest Territories">NT</option> 
+                            <option value="Nunavut">NU</option> 
+                            <option value="Ontario">ON</option> 
+                            <option value="Prince Edward Island">PE</option> 
+                            <option value="Quebec">QC</option> 
+                            <option value="Saskatchewan">SK</option> 
+                            <option value="Yukon">YT</option> 
+                            </select> 
+                        </span> </td>
+                
+                </tr>
+                
+                <tr>
+                    <!--only Canadian format Postal code(Letter Digit Letter Digit Letter Digit; ex C1A 1A7.-->
+                    <td> <label> Postal Code </label> </td>
+                    <td> <span> <input type="text" name="streetname"  
+                    pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" 
+                    placeholder=" M4X 1N2" required> </span> </td>
+                
+                </tr>
+             
+             
+                <tr>          <!--name of country.-->
+                    
+                    <td> <label> Country </label> </td>
+                    <td> <span> <input type="text" name="cityname" required> </span>  </td> 
+                
+                </tr>
+                   
+                <!--HTML5 email validation.-->
+                <tr> 
+                    
+                    <td> <label> Email </label> </td>
+                    <td> <span> <input type="email" name="email" placeholder="sampad@example.com" required> </span> </td> 
+                
+                </tr>
+             
+                    <!--Phone validation in the format 123-456-7890-->
+             
+                <tr>
+                    
+                    <td> <label> Phone (format: 111-222-3333) </label> </td> 
+                    <td> <span> <input type="tel" placeholder="xxx-xxx-xxxx" id="teleNo" name="teleNO" 
+                   pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" required> </span> </td> 
+                
+                </tr>
+             
+                <tr>
+                      
+                    <td> <label> Username </label> </td> 
+                    <td> <span> <input type="text" name="streetname" placeholder="Enter your username" pattern="^[A-Za-z][A-Za-z0-9]{5,}" required> </span> </td> 
+                
+                </tr> 
+                     
+                           
+                <tr>                     
+                           <!--password validation -->     
+                    <td> <label> Password </label> </td>
+                    <td> <span>    <input type="password" id="psswd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="password must be 8 characters long, must start with a character, must have
+                                at least 1 digit and 1 uppercase" required > </span> </td>
+                
+                </tr>
+                
+                
+                <tr>     <!--matches first typed password and display matches or not-->
+                    
+                    <td> <label> Confirm password </label> </td> 
+                    <td> <span> <input type="password" id="repsswd" required> </span> </td>
+                
+                </tr> 
+            </table>
+                                                   <!-- submit and reset buttons   -->  
+                                
+                  &nbsp;      <input type="submit" value="Submit"> &nbsp;&nbsp;&nbsp;
+                                
+                              <input type="reset" value="Reset">
+
+            </fieldset>
+        </form>  
+                              
+    </div> 
+                          
+                  
+             
+</section>
+<div id="ball" ></div>
+<aside id="mssg"> 
+    
+        <div id="msg">                  <!-- password validation match display  -->  
+            <h3>Password must match the following:</h3>
+                            <p id="firstletter" class="invalid">Start with character</p>           
+                            <p id="lowerletter" class="invalid">lowercase letter</p>
+                            <p id="upperletter" class="invalid">Uppercase letter</p>
+                            <p id="number" class="invalid">Numbers</p>
+                            <p id="pswlength" class="invalid">Minimum 8 characters</p>
+        </div>
+                            <span id="repass"> </span>
+    
+</aside>
+
+            <footer> &copy;2018 Shankar Babu Acharya</footer>
+       </body>
+</html>
